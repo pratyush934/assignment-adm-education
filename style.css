@@ -59,7 +59,7 @@ body {
 }
 
 .hobbies li::before {
-  content: "✓";
+  content: "-";
   color: #0077cc;
   position: absolute;
   left: 0;
@@ -89,15 +89,15 @@ body {
 }
 
 a {
-  color: #007bff; /* A nice blue color */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make it bold */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #007bff;
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s ease
 }
 
 a:hover {
-  color: #0056b3; /* Darker blue on hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #0056b3; 
+  text-decoration: underline; 
 }
 
 @media (max-width: 500px) {
