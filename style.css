@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  max-width: 360px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077cc;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hobbies  {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #555;
+  text-align: left;
+}
+
+.hobbies li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.hobbies li::before {
+  content: "✓";
+  color: #0077cc;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.skills  {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #555;
+  text-align: left;
+}
+
+.skills li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills li::before {
+  content: "*";
+  color: #0077cc;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+a {
+  color: #007bff; /* A nice blue color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it bold */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 18px;
+  }
+
+  .bio {
+    font-size: 15px;
+  }
+
+  .hobbies {
+    font-size: 14px;
+  }
+}
